@@ -37,8 +37,8 @@
 											<td>${order.id}</td>
 											<td>
 												<ul>
-													<c:forEach items="${order.orderItems}" var="selectbook">
-														<li>${item.book.bookname}(Quantity - ${item.quantity} )</li>
+													<c:forEach items="${order.orderItems}" var="item">
+														<li>${selectbook.bookname}(Quantity - ${item.quantity} )</li>
 													</c:forEach>
 												</ul>
 											</td>
@@ -47,7 +47,7 @@
 											<td>${order.orderedDate }</td>
 											<c:if test="${order.status == 'ORDERED'}">
 												<td><a
-													href="../Order/updateStatus?id=${order.id}&status=CANCELLED"
+													href="../Orders/updateStatus?id=${order.id}&status=CANCELLED"
 													class="btn btn-danger btn-sm">Cancel Order </a></td>
 											</c:if>
 

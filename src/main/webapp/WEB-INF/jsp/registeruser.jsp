@@ -60,6 +60,7 @@ input[type=submit]:hover {
 </head>
 <body>
 	<h3>Sign Up To BookOutlet</h3>
+	<div align="center">
 	<form action="adduser" method="POST">
 
 
@@ -114,7 +115,7 @@ input[type=submit]:hover {
 					
 
 
-
+</div>
 				</div>
 				<div></div>
 			</div>
